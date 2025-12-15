@@ -23,11 +23,11 @@ Follow these steps exactly in your terminal to set up the environment, create th
 Install the necessary Linux development headers required for the `cryptography` library.
 
 ```bash
-# Install development packages (essential for compiling Python libraries)
+# Install packages (essential Python libraries)
 sudo apt update
 sudo apt install build-essential libssl-dev libffi-dev python3-dev
 
-# Resolve any broken package installations (optional, but good practice)
+# Resolve broken package installations
 sudo dpkg --configure -a
 sudo apt install -f
 ```
@@ -44,7 +44,7 @@ cd secure-file-project
 python3 -m venv venv
 source venv/bin/activate
 
-# Install the required Python library
+# Install Python library
 pip install cryptography
 ```
 
@@ -64,7 +64,7 @@ import os
 from cryptography.fernet import Fernet
 import sys 
 
-# --- 1. GLOBAL CONFIGURATION (File Paths and Variables) ---
+# --- 1. File Paths and Variables ---
 INPUT_FILE = "sensitive_data.txt"
 ENCRYPTED_FILE = "sensitive_data.enc"
 DECRYPTED_FILE = "sensitive_data_restored.txt"
@@ -217,7 +217,7 @@ if __name__ == "__main__":
 
 ```
 
-  * **To Save and Exit in `nano`:** Press `Ctrl+O` (Write Out), hit `Enter` to confirm the filename, then press `Ctrl+X` (Exit).
+  * **To Save and Exit in `nano`:** Press `Ctrl+x`, hit `Enter` to confirm the filename(Exit).
 
 #### 4\. Create the Input Data File
 
