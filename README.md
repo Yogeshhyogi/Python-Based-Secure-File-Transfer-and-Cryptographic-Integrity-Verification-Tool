@@ -1,5 +1,3 @@
-## Hybrid Threat Detection and Response System
-
 ## Title: Python-Based Secure File Transfer and Cryptographic Integrity Verification Tool
 
 ### Abstract
